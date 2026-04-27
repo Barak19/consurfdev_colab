@@ -3520,14 +3520,12 @@ REMARK 999 Chain %s was processed
     if vars['running_mode'] == "_mode_pdb_no_msa" or vars['running_mode'] == "_mode_no_pdb_no_msa":
         
         remark += """REMARK 999 %s E value: %s
-REMARK 999 %s Database: %s
-REMARK 999 %s Iterations: %s
 REMARK 999 Maximum sequence identity: %s%%
 REMARK 999 Minimum sequence identity: %s%%
 REMARK 999 Unique sequences found: %s
 REMARK 999 Sequences used in MSA: %s
 REMARK 999 MSA Algorithm: %s
-""" %(form['Homolog_search_algorithm'], form['E_VALUE'], form['Homolog_search_algorithm'], vars['protein_db'], form['Homolog_search_algorithm'], form['ITERATIONS'], form['MIN_IDENTITY'], vars['hit_redundancy'], vars['unique_seqs'], vars['final_number_of_homologoues'], form['MSAprogram'])
+""" %(form['Homolog_search_algorithm'], form['E_VALUE'], form['MIN_IDENTITY'], vars['hit_redundancy'], vars['unique_seqs'], vars['final_number_of_homologoues'], form['MSAprogram'])
 
         if form['best_uniform_sequences'] == "best":
             
