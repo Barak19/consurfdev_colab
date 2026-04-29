@@ -3554,7 +3554,7 @@ REMARK 999 MSA Algorithm: %s
     remark += """REMARK 999 Substitution model: %s
 REMARK 999 MSA Average Pairwise Distance (APD): %.2f
 REMARK 999 
-""" %(substitution_model, vars['Average pairwise distance'])
+""" %(substitution_model, float(vars['Average pairwise distance']))
             
     return remark
 
